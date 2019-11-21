@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#95afff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/chat_name"
+            android:text="NoName"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:id="@+id/chat_addBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="1sp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/add_freind_icon" />
+
+        <ImageButton
+            android:id="@+id/chat_banBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="1sp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/block_freind_icon" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/chat_log"
+        android:layout_width="match_parent"
+        android:layout_height="430dp">
+
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/chat_chatEdit"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/chat_sendBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="1sp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/send_icon" />
+
+    </LinearLayout>
+
+</LinearLayout>
